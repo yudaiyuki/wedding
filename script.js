@@ -27,7 +27,7 @@ const GUESTS = [
                 "name": "たち",
                 "relationship": "同期",
                 "message": "たち！これあげるわ！",
-                "specialEffect": "bubbles"
+                "specialEffect": "ramen"
         },
         {
                 "id": "isechangod",
@@ -40,8 +40,8 @@ const GUESTS = [
                 "id": "mineminestraight",
                 "name": "たかみね",
                 "relationship": "同期",
-                "message": "たかみね、自分に真っ直ぐなとこ👍これからもよろしく！",
-                "specialEffect": "fireworks"
+                "message": "たかみね、自分に真っ直ぐなとこ👍👍👍👍👍これからもよろしく！",
+                "specialEffect": "beer"
         },
         {
                 "id": "kijicommunity",
@@ -90,7 +90,7 @@ const GUESTS = [
                 "name": "かわずみ",
                 "relationship": "同期",
                 "message": "ずみ、そろそろ億れるんちゃうん？",
-                "specialEffect": "hearts"
+                "specialEffect": "money"
         },
         {
                 "id": "baseball",
@@ -153,154 +153,63 @@ const GUESTS = [
                 "name": "ホッシ",
                 "relationship": "大学野球部",
                 "message": "金貸してや",
-                "specialEffect": "stars"
+                "specialEffect": "money"
         },
         {
                 "id": "tomochin",
                 "name": "いたの",
                 "relationship": "高校野球部",
                 "message": "またいつか対戦できたらええな！",
-                "specialEffect": "bubbles"
+                "specialEffect": "baseballSlide"
         },
         {
-                "id": "g021",
+                "id": "ematsuema",
                 "name": "えまつ",
                 "relationship": "高校野球部",
-                "message": "",
+                "message": "3塁ランナーのえまつにVOY!!言い返せなかったのがいまでも後悔してる",
                 "specialEffect": "sparkle"
         },
         {
-                "id": "g022",
+                "id": "taisei_H",
                 "name": "はっしー",
                 "relationship": "高校野球部",
-                "message": "",
-                "specialEffect": "snowflakes"
+                "message": "もう引退？子育て頑張れ👨‍👩‍👦",
+                "specialEffect": "baseballCrazyBounce"
         },
         {
-                "id": "g023",
+                "id": "deliciousrice",
                 "name": "なっちゃん",
                 "relationship": "高校野球部",
-                "message": "",
+                "message": "わざわざありがとう～子育て頑張れ！",
                 "specialEffect": "bubbles"
         },
         {
-                "id": "g024",
+                "id": "abechanyips",
                 "name": "あべちゃん",
                 "relationship": "高校野球部",
-                "message": "",
-                "specialEffect": "sparkle"
+                "message": "またキャッチボールしよー⚾",
+                "specialEffect": "baseballCrazyBounce"
         },
         {
-                "id": "g025",
+                "id": "hidabank",
                 "name": "ひだ",
                 "relationship": "高校野球部",
-                "message": "",
-                "specialEffect": "hearts"
+                "message": "なんやかんや一番長く野球やったなーまた草野球しよー",
+                "specialEffect": "money"
         },
         {
                 "id": "koyama",
                 "name": "こやま",
                 "relationship": "幼馴染",
-                "message": "",
+                "message": "受付スピーチ準備いろいろありがとう！今日だけじゃなく野球とかいつもありがとう！これからもよろしく！",
                 "specialEffect": "rainbow"
         },
         {
                 "id": "ueuepanda",
                 "name": "なかうえ",
                 "relationship": "幼馴染",
-                "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？(笑)",
+                "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？だいぶきつかったわー笑",
                 "specialEffect": "sakura"
-        },
-        {
-                "id": "g038",
-                "name": "三浦康平",
-                "relationship": "車仲間",
-                "message": "康平君、ドライブや車談義を一緒に楽しんでくれてありがとう！",
-                "specialEffect": "hearts"
-        },
-        {
-                "id": "g039",
-                "name": "青木恭子",
-                "relationship": "手芸クラブ仲間",
-                "message": "恭子さん、手作りの温かさを一緒に感じられて素晴らしかったです！",
-                "specialEffect": "rainbow"
-        },
-        {
-                "id": "g040",
-                "name": "福田智也",
-                "relationship": "卓球仲間",
-                "message": "智也君、白熱した試合を一緒に楽しんだ思い出は最高です！",
-                "specialEffect": "sakura"
-        },
-        {
-                "id": "g041",
-                "name": "野村桃子",
-                "relationship": "英会話仲間",
-                "message": "桃子ちゃん、一緒に英語を学んで成長できて嬉しかったです！",
-                "specialEffect": "roses"
-        },
-        {
-                "id": "g042",
-                "name": "原田健二",
-                "relationship": "パソコン教室仲間",
-                "message": "健二さん、ITスキルを一緒に向上させた仲間として感謝です！",
-                "specialEffect": "fireworks"
-        },
-        {
-                "id": "g043",
-                "name": "上田真理",
-                "relationship": "ヨガ仲間",
-                "message": "真理さん、心身の健康を一緒に目指した時間が素晴らしかったです！",
-                "specialEffect": "butterflies"
-        },
-        {
-                "id": "g044",
-                "name": "宮崎俊介",
-                "relationship": "バンド仲間",
-                "message": "俊介君、一緒に音楽を作り上げた青春の思い出をありがとう！",
-                "specialEffect": "confetti"
-        },
-        {
-                "id": "g045",
-                "name": "浜田綾香",
-                "relationship": "演劇サークル仲間",
-                "message": "綾香ちゃん、舞台で一緒に感動を作った経験は宝物です！",
-                "specialEffect": "stars"
-        },
-        {
-                "id": "g046",
-                "name": "谷口哲也",
-                "relationship": "DIY仲間",
-                "message": "哲也さん、ものづくりの楽しさを一緒に味わえて最高でした！",
-                "specialEffect": "bubbles"
-        },
-        {
-                "id": "g047",
-                "name": "細川美樹",
-                "relationship": "マラソン仲間",
-                "message": "美樹ちゃん、42.195kmを一緒に完走した達成感は忘れられません！",
-                "specialEffect": "stars"
-        },
-        {
-                "id": "g048",
-                "name": "今井隆志",
-                "relationship": "キャンプ仲間",
-                "message": "隆志君、自然の中で一緒に過ごした時間が心の支えです！",
-                "specialEffect": "snowflakes"
-        },
-        {
-                "id": "g049",
-                "name": "松田弘美",
-                "relationship": "コーラス仲間",
-                "message": "弘美さん、美しいハーモニーを一緒に奏でた思い出をありがとう！",
-                "specialEffect": "fireworks"
-        },
-        {
-                "id": "g050",
-                "name": "河野慶一",
-                "relationship": "サッカー仲間",
-                "message": "慶一君、最後のメンバーとして、共に汗を流した仲間に感謝です！",
-                "specialEffect": "sparkle"
         }
 ];
 
@@ -443,6 +352,9 @@ function applySpecialEffect(effectType) {
         case 'hearts':
             createHeartsEffect(effectContainer);
             break;
+        case 'beer':
+            createBeerEffect(effectContainer);
+            break;
         case 'rainbow':
             createRainbowEffect(effectContainer);
             break;
@@ -469,6 +381,9 @@ function applySpecialEffect(effectType) {
             break;
         case 'money':
             createMoneyEffect(effectContainer);
+            break;
+        case 'ramen':
+            createRamenEffect(effectContainer);
             break;
         case 'joker':
             createJokerEffect(effectContainer);
@@ -659,6 +574,26 @@ style.textContent = `
     @keyframes baseballSlide {
         0% { transform: translateX(0) rotate(0deg); opacity: 1; }
         100% { transform: translateX(120vw) rotate(720deg); opacity: 0; }
+    }
+    @keyframes beerDrop {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
+    @keyframes ramenDrop {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+        }
     }
     @keyframes jokerSpin {
         0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
@@ -877,6 +812,22 @@ function createJokerEffect(container) {
     }
 }
 
+function createBeerEffect(container) {
+    const beerElements = ['🍺', '🥂', '🍻', '🍶', '🍷'];
+    for (let i = 0; i < 40; i++) {
+        const beer = document.createElement('div');
+        beer.innerHTML = beerElements[Math.floor(Math.random() * beerElements.length)];
+        beer.style.cssText = `
+            position: absolute;
+            font-size: ${Math.random() * 25 + 20}px;
+            left: ${Math.random() * 100}vw;
+            top: -60px;
+            animation: beerDrop ${Math.random() * 5 + 2.5}s ease-in infinite;
+            animation-delay: ${Math.random() * 3}s;
+        `;
+        container.appendChild(beer);
+    }
+}
 
 function createMoneyEffect(container) {
     const moneyElements = ['💰', '💵', '💴', '💶', '💷', '🪙', '🤑'];
@@ -893,5 +844,22 @@ function createMoneyEffect(container) {
             transform-origin: center;
         `;
         container.appendChild(money);
+    }
+}
+
+function createRamenEffect(container) {
+    const ramenElements = ['🍖', '🍜', '🧄' ];
+    for (let i = 0; i < 40; i++) {
+        const ramen = document.createElement('div');
+        ramen.innerHTML = ramenElements[Math.floor(Math.random() * ramenElements.length)];
+        ramen.style.cssText = `
+            position: absolute;
+            font-size: ${Math.random() * 25 + 20}px;
+            left: ${Math.random() * 100}vw;
+            top: -60px;
+            animation: ramenDrop ${Math.random() * 5 + 3}s ease-in infinite;
+            animation-delay: ${Math.random() * 3}s;
+        `;
+        container.appendChild(ramen);
     }
 }
