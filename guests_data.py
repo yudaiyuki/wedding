@@ -1,0 +1,388 @@
+# -*- coding: utf-8 -*-
+"""
+ゲストデータ管理ファイル
+このファイルを編集してゲスト情報を管理してください
+"""
+
+# ============================================
+# 🎊 ゲストデータ設定 🎊
+# ============================================
+
+GUESTS_DATA = [
+    {
+        "id": "yudaiyudaiyudai",
+        "name": "ゆき",
+        "relationship": "ゆき",
+        "message": "ふひ",
+        "specialEffect": "bubbles"
+    },  
+    {
+        "id": "momomomondon",
+        "name": "どん",
+        "relationship": "妹",
+        "message": "勉強頑張れー",
+        "specialEffect": "bubbles"
+    },
+
+    # torishima
+    {
+        "id": "tachijiro",
+        "name": "たち",
+        "relationship": "同期",
+        "message": "たち！これあげるわ！",
+        "specialEffect": "bubbles"
+    },
+    {
+        "id": "isechangod", 
+        "name": "伊勢さん",
+        "relationship": "同期",
+        "message": "万能なとこすげえよなー彼女おらんとこだけやん！",
+        "specialEffect": "golf"
+    },
+    {
+        "id": "mineminestraight",
+        "name": "たかみね",
+        "relationship": "同期",
+        "message": "たかみね、自分に真っ直ぐなとこ👍これからもよろしく！",
+        "specialEffect": "fireworks"
+    },
+    {
+        "id": "kijicommunity",
+        "name": "きじま", 
+        "relationship": "同期",
+        "message": "コミュ力うらやましいわあー",
+        "specialEffect": "butterflies"
+    },    
+    {
+        "id": "ifican",
+        "name": "にしえ", 
+        "relationship": "同期",
+        "message": "また飲みに行けたら行こ！(笑)",
+        "specialEffect": "confetti"
+    },
+    {
+        "id": "supermario64",
+        "name": "Mario", 
+        "relationship": "同期",
+        "message": "Thank you for being here today! I can't speak English yet...",
+        "specialEffect": "stars"
+    },
+    {
+        "id": "GU-casino",
+        "name": "ぐーさん",
+        "relationship": "同期", 
+        "message": "子育て2倍頑張ってください！",
+        "specialEffect": "bubbles"
+    },
+    {
+        "id": "whenmarry",
+        "name": "きのした",
+        "relationship": "同期",
+        "message": "はよ結婚せー",
+        "specialEffect": "sparkle"
+    },
+    {
+        "id": "coolmoe",
+        "name": "はすいけ",
+        "relationship": "同期",
+        "message": "準備は真面目にしたほうがいいで！（新郎目線）",
+        "specialEffect": "snowflakes"
+    },
+    {
+        "id": "sawachan",
+        "name": "かわずみ",
+        "relationship": "同期",
+        "message": "ずみ、そろそろ億れるんちゃうん？",
+        "specialEffect": "hearts"
+    },
+    {
+        "id": "baseball",
+        "name": "たにだ",
+        "relationship": "同期",
+        "message": "藤浪観にいこ！",
+        "specialEffect": "baseballCrazyBounce"
+    },
+    {
+        "id": "onopsycho",
+        "name": "おの",
+        "relationship": "同期",
+        "message": "カジノしようぜ！",
+        "specialEffect": "trump"
+    },
+    # 大学
+    {
+        "id": "bigvoice",
+        "name": "ナガオ",
+        "relationship": "大学野球部",
+        "message": "またゴルフ誘ってくださいー",
+        "specialEffect": "golf"
+    },
+    {
+        "id": "ojisan",
+        "name": "酒井",
+        "relationship": "大学野球部",
+        "message": "いいパパになりそうやな",
+        "specialEffect": "baseballScatter"
+    },
+    {
+        "id": "JRso-ta",
+        "name": "井上",
+        "relationship": "大学野球部後輩",
+        "message": "後輩誘わなしんどいなー",
+        "specialEffect": "baseballSlide"
+    },
+    {
+        "id": "batty-speed",
+        "name": "かわばた",
+        "relationship": "大学野球部",
+        "message": "子育て頑張って",
+        "specialEffect": "fireworks"
+    },
+    {
+        "id": "nagayamaonthethree",
+        "name": "ながやま",
+        "relationship": "大学野球部",
+        "message": "大阪までありがとう～次は2ヶ月後やな！",
+        "specialEffect": "butterflies"
+    },
+    {
+        "id": "sistercallyoumiyabe",
+        "name": "みやべ",
+        "relationship": "大学野球部",
+        "message": "金ほしいなー",
+        "specialEffect": "money"
+    },
+    {
+        "id": "simikenhossi",
+        "name": "ホッシ",
+        "relationship": "大学野球部",
+        "message": "金貸してや",
+        "specialEffect": "money"
+    },
+    # 高校
+    {
+        "id": "tomochin",
+        "name": "いたの",
+        "relationship": "高校野球部",
+        "message": "またいつか対戦できたらええな！",
+        "specialEffect": "bubbles"
+    },
+    {
+        "id": "g021",
+        "name": "えまつ",
+        "relationship": "高校野球部",
+        "message": "",
+        "specialEffect": "sparkle"
+    },
+    {
+        "id": "g022",
+        "name": "はっしー",
+        "relationship": "高校野球部",
+        "message": "",
+        "specialEffect": "snowflakes"
+    },
+    {
+        "id": "g023",
+        "name": "なっちゃん",
+        "relationship": "高校野球部",
+        "message": "",
+        "specialEffect": "bubbles"
+    },
+    {
+        "id": "g024",
+        "name": "あべちゃん",
+        "relationship": "高校野球部",
+        "message": "",
+        "specialEffect": "sparkle"
+    },
+    {
+        "id": "g025",
+        "name": "ひだ",
+        "relationship": "高校野球部",
+        "message": "",
+        "specialEffect": "hearts"
+    },
+    
+    # その他
+    {
+        "id": "koyama",
+        "name": "こやま",
+        "relationship": "幼馴染",
+        "message": "",
+        "specialEffect": "rainbow"
+    },
+    {
+        "id": "ueuepanda",
+        "name": "なかうえ",
+        "relationship": "幼馴染",
+        "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？(笑)",
+        "specialEffect": "sakura"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    {
+        "id": "g038",
+        "name": "三浦康平",
+        "relationship": "車仲間",
+        "message": "康平君、ドライブや車談義を一緒に楽しんでくれてありがとう！",
+        "specialEffect": "hearts"
+    },
+    {
+        "id": "g039",
+        "name": "青木恭子",
+        "relationship": "手芸クラブ仲間",
+        "message": "恭子さん、手作りの温かさを一緒に感じられて素晴らしかったです！",
+        "specialEffect": "rainbow"
+    },
+    {
+        "id": "g040",
+        "name": "福田智也",
+        "relationship": "卓球仲間",
+        "message": "智也君、白熱した試合を一緒に楽しんだ思い出は最高です！",
+        "specialEffect": "sakura"
+    },
+    {
+        "id": "g041",
+        "name": "野村桃子",
+        "relationship": "英会話仲間",
+        "message": "桃子ちゃん、一緒に英語を学んで成長できて嬉しかったです！",
+        "specialEffect": "roses"
+    },
+    {
+        "id": "g042",
+        "name": "原田健二",
+        "relationship": "パソコン教室仲間",
+        "message": "健二さん、ITスキルを一緒に向上させた仲間として感謝です！",
+        "specialEffect": "fireworks"
+    },
+    {
+        "id": "g043",
+        "name": "上田真理",
+        "relationship": "ヨガ仲間",
+        "message": "真理さん、心身の健康を一緒に目指した時間が素晴らしかったです！",
+        "specialEffect": "butterflies"
+    },
+    {
+        "id": "g044",
+        "name": "宮崎俊介",
+        "relationship": "バンド仲間",
+        "message": "俊介君、一緒に音楽を作り上げた青春の思い出をありがとう！",
+        "specialEffect": "confetti"
+    },
+    {
+        "id": "g045",
+        "name": "浜田綾香",
+        "relationship": "演劇サークル仲間",
+        "message": "綾香ちゃん、舞台で一緒に感動を作った経験は宝物です！",
+        "specialEffect": "stars"
+    },
+    {
+        "id": "g046",
+        "name": "谷口哲也",
+        "relationship": "DIY仲間",
+        "message": "哲也さん、ものづくりの楽しさを一緒に味わえて最高でした！",
+        "specialEffect": "bubbles"
+    },
+    {
+        "id": "g047",
+        "name": "細川美樹",
+        "relationship": "マラソン仲間",
+        "message": "美樹ちゃん、42.195kmを一緒に完走した達成感は忘れられません！",
+        "specialEffect": "stars"
+    },
+    {
+        "id": "g048",
+        "name": "今井隆志",
+        "relationship": "キャンプ仲間",
+        "message": "隆志君、自然の中で一緒に過ごした時間が心の支えです！",
+        "specialEffect": "snowflakes"
+    },
+    {
+        "id": "g049",
+        "name": "松田弘美",
+        "relationship": "コーラス仲間",
+        "message": "弘美さん、美しいハーモニーを一緒に奏でた思い出をありがとう！",
+        "specialEffect": "fireworks"
+    },
+    {
+        "id": "g050",
+        "name": "河野慶一",
+        "relationship": "サッカー仲間",
+        "message": "慶一君、最後のメンバーとして、共に汗を流した仲間に感謝です！",
+        "specialEffect": "sparkle"
+    }
+]
+
+# ============================================
+# 🎯 特殊効果の説明
+# ============================================
+"""
+specialEffect の種類:
+【既存エフェクト】
+- "sparkle" : ✨ キラキラエフェクト
+- "hearts"  : 💖 ハートが舞い散る
+- "rainbow" : 🌈 レインボー背景
+
+【新エフェクト】
+- "sakura"    : 🌸 桜の花びらが舞う
+- "fireworks" : 🎆 花火が打ち上がる
+- "confetti"  : 🎊 紙吹雪が舞う
+- "stars"     : ⭐ 星が瞬く
+- "butterflies": 🦋 蝶が舞い踊る
+- "snowflakes": ❄️ 雪の結晶が降る
+- "bubbles"   : 🫧 シャボン玉がふわふわ
+- "roses"     : 🌹 薔薇の花びらが舞う
+- "golf"      : ⛳ ゴルフボールが弧を描く
+- "baseball"  : ⚾ 野球ボールが回転しながら飛ぶ
+- "trump"     : 🃏 トランプカードがひらひら舞う
+- "joker"     : 🃏 ジョーカーが回転しながら舞う
+
+ゲスト追加例:
+{
+    "id": "your_guest_id",           # 英数字のユニークなID
+    "name": "ゲストの名前",           # 表示される名前
+    "relationship": "関係性",        # 例：大学の友人、職場の同僚
+    "message": "個人メッセージ",      # 封筒の中のメッセージ
+    "specialEffect": "sakura"       # エフェクトの種類（16種類から選択）
+}
+"""
+
+# ============================================
+# 🔧 便利な関数
+# ============================================
+
+def get_all_guests():
+    """全ゲストデータを取得"""
+    return GUESTS_DATA
+
+def get_guest_by_id(guest_id):
+    """IDでゲストを検索"""
+    for guest in GUESTS_DATA:
+        if guest['id'] == guest_id:
+            return guest
+    return None
+
+def get_guest_count():
+    """ゲスト数を取得"""
+    return len(GUESTS_DATA)
+
+def list_guest_ids():
+    """全ゲストIDのリストを取得"""
+    return [guest['id'] for guest in GUESTS_DATA]
+
+if __name__ == "__main__":
+    print("🎊 ゲストデータ管理")
+    print("="*40)
+    print(f"📊 登録ゲスト数: {get_guest_count()}人")
+    print("\n👥 ゲスト一覧:")
+    for guest in GUESTS_DATA:
+        print(f"  • ID: {guest['id']} - {guest['name']} ({guest['relationship']})")
+    print("="*40)
