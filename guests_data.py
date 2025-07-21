@@ -151,6 +151,13 @@ GUESTS_DATA = [
         "relationship": "大学野球部",
         "message": "金ほしいなー",
         "specialEffect": "money"
+    },   
+    {
+        "id": "danyunakazawa",
+        "name": "なかざわ",
+        "relationship": "大学野球部",
+        "message": "今日はありがとう～のんびり暮らしていくわ～くらいしかいうことないな～",
+        "specialEffect": "money"
     },
     {
         "id": "simikenhossi",
@@ -205,14 +212,14 @@ GUESTS_DATA = [
     
     # その他
     {
-        "id": "koyama",
+        "id": "koyamakekkonsenno",
         "name": "こやま",
         "relationship": "幼馴染",
         "message": "受付スピーチ準備いろいろありがとう！今日だけじゃなく野球とかいつもありがとう！これからもよろしく！",
         "specialEffect": "rainbow"
     },
     {
-        "id": "ueuepanda",
+        "id": "ueuepandabaseball",
         "name": "なかうえ",
         "relationship": "幼馴染",
         "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？だいぶきつかったわー笑",
