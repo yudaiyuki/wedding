@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☀ message ☀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Yomogi', cursive;
+            background: linear-gradient(135deg, #87CEEB 0%, #98E4FF 50%, #B8E6FF 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #8B4513;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 雲のアニメーション */
+        body::before,
+        body::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 100px;
+            z-index: -1;
+        }
+
+        body::before {
+            width: 80px;
+            height: 40px;
+            top: 15%;
+            left: 0%;
+            border-radius: 40px;
+            animation: cloudFloat 22s infinite linear;
+            box-shadow: 
+                25px -8px 0 -5px rgba(255, 255, 255, 0.75),
+                50px 0 0 -3px rgba(255, 255, 255, 0.8),
+                15px 12px 0 -2px rgba(255, 255, 255, 0.7),
+                70px 15px 0 -8px rgba(255, 255, 255, 0.65);
+        }
+
+        body::after {
+            width: 70px;
+            height: 35px;
+            top: 70%;
+            right: 0%;
+            border-radius: 35px;
+            animation: cloudFloat 28s infinite linear reverse;
+            box-shadow: 
+                20px -6px 0 -3px rgba(255, 255, 255, 0.7),
+                45px 2px 0 -2px rgba(255, 255, 255, 0.75),
+                10px 10px 0 -1px rgba(255, 255, 255, 0.65);
+        }
+
+        @keyframes cloudFloat {
+            0% { transform: translateX(-100px); }
+            100% { transform: translateX(calc(100vw + 100px)); }
+        }
+
+        /* 3つ目の雲 */
+        .main-container::before {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7);
+            width: 60px;
+            height: 30px;
+            top: 85%;
+            left: 0%;
+            border-radius: 30px;
+            z-index: -1;
+            animation: cloudFloat 35s infinite linear;
+            box-shadow: 
+                15px -4px 0 -2px rgba(255, 255, 255, 0.65),
+                35px 2px 0 -1px rgba(255, 255, 255, 0.6),
+                8px 8px 0 -1px rgba(255, 255, 255, 0.55);
+        }
+
+        /* 4つ目の雲（中間の高さ） */
+        .main-container::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.75);
+            width: 90px;
+            height: 38px;
+            top: 45%;
+            right: 0%;
+            border-radius: 45px;
+            z-index: -1;
+            animation: cloudFloat 26s infinite linear reverse;
+            box-shadow: 
+                30px -6px 0 -4px rgba(255, 255, 255, 0.72),
+                60px 3px 0 -2px rgba(255, 255, 255, 0.68),
+                18px 12px 0 -3px rgba(255, 255, 255, 0.7);
+        }
+        
+        .main-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            margin-bottom: 2rem;
+            color: #B8860B;
+            font-size: 2.5rem;
+            white-space: nowrap;
+        }
+        
+        /* スマートフォン対応 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+        
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            border: 3px solid #D4AF37;
+            border-radius: 25px;
+            padding: 2rem;
+            margin: 1rem auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #B8860B;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            white-space: nowrap;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 18px;
+            border: 2px solid #D4AF37;
+            border-radius: 25px;
+            font-size: 16px;
+            text-align: center;
+            background: rgba(255,255,255,0.9);
+            color: #8B4513;
+            margin: 10px 0;
+            font-family: 'Yomogi', cursive;
+        }
+        
+        button {
+            background: linear-gradient(145deg, #FFD700, #B8860B);
+            color: #8B4513;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 8px;
+            font-family: 'Yomogi', cursive;
+            font-weight: 600;
+        }
+        
+        .clear-btn {
+            background: linear-gradient(145deg, #DEB887, #CD853F);
+        }
+        
+        .envelope-container {
+            margin: 2rem auto;
+            width: 300px;
+            height: 200px;
+        }
+
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background: #F5DEB3;
+            border: 3px solid #D2B48C;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: #DEB887;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .envelope-icon {
+            font-size: 3rem;
+            color: #8B4513;
+        }
+
+        .tap-instruction {
+            text-align: center;
+            margin-top: 1rem;
+            color: #8B4513;
+            font-size: 1.2rem;
+        }
+
+        .message-card {
+            background: linear-gradient(145deg, #FFF8DC, #F5F5DC);
+            border: 3px solid #D4AF37;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .message-card h2 {
+            color: #B8860B;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .message-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #8B4513;
+        }
+        
+        @media (max-width: 768px) {
+            .envelope {
+                width: 250px;
+                height: 166px;
+            }
+            .envelope-container {
+                width: 250px;
+                height: 166px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>☀ message ☀</h1>
+        
+        <div id="container">
+            <div class="login-container">
+                <h2>Guest ID Input<br>📝</h2>
+                <p style="margin: 20px 0; color: #8B4513;">enter your individual ID</p>
+                <input type="text" id="userId" placeholder="Enter Your ID">
+                <div style="margin-top: 1rem;">
+                    <button onclick="checkGuest()">Show Message</button>
+                    <button onclick="clearInputs()" class="clear-btn">Clear</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="guestName" style="display: none; font-size: 2rem; color: #B8860B; margin: 2rem 0;"></div>
+        
+        <div id="messageContainer" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
