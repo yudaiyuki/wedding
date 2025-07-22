@@ -132,7 +132,7 @@ const GUESTS = [
                 "name": "かわばた",
                 "relationship": "大学野球部",
                 "message": "子育て頑張って",
-                "specialEffect": "fireworks"
+                "specialEffect": "roses"
         },
         {
                 "id": "nagayamaonthethree",
@@ -153,7 +153,7 @@ const GUESTS = [
                 "name": "なかざわ",
                 "relationship": "大学野球部",
                 "message": "今日はありがとう～のんびり暮らしていくわ～くらいしかいうことないな～",
-                "specialEffect": "money"
+                "specialEffect": "sakura"
         },
         {
                 "id": "simikenhossi",
@@ -181,7 +181,7 @@ const GUESTS = [
                 "name": "はっしー",
                 "relationship": "高校野球部",
                 "message": "もう引退？子育て頑張れ👨‍👩‍👦",
-                "specialEffect": "baseballCrazyBounce"
+                "specialEffect": "sakura"
         },
         {
                 "id": "deliciousrice",
@@ -209,7 +209,7 @@ const GUESTS = [
                 "name": "こやま",
                 "relationship": "幼馴染",
                 "message": "受付スピーチ準備いろいろありがとう！今日だけじゃなく野球とかいつもありがとう！これからもよろしく！",
-                "specialEffect": "rainbow"
+                "specialEffect": "baseballSlide"
         },
         {
                 "id": "ueuepandabaseball",
