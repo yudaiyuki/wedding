@@ -68,10 +68,10 @@ GUESTS_DATA = [
         "specialEffect": "stars"
     },
     {
-        "id": "GU-casino",
-        "name": "ぐーさん",
+        "id": "Gwonmocasino",
+        "name": "구さん",
         "relationship": "同期", 
-        "message": "子育て2倍頑張ってください！",
+        "message": "육아 최선을 다하십시오!",
         "specialEffect": "bubbles"
     },
     {
@@ -136,7 +136,7 @@ GUESTS_DATA = [
         "name": "かわばた",
         "relationship": "大学野球部",
         "message": "子育て頑張って",
-        "specialEffect": "fireworks"
+        "specialEffect": "roses"
     },
     {
         "id": "nagayamaonthethree",
@@ -157,7 +157,7 @@ GUESTS_DATA = [
         "name": "なかざわ",
         "relationship": "大学野球部",
         "message": "今日はありがとう～のんびり暮らしていくわ～くらいしかいうことないな～",
-        "specialEffect": "money"
+        "specialEffect": "sakura"
     },
     {
         "id": "simikenhossi",
@@ -186,10 +186,10 @@ GUESTS_DATA = [
         "name": "はっしー",
         "relationship": "高校野球部",
         "message": "もう引退？子育て頑張れ👨‍👩‍👦",
-        "specialEffect": "baseballCrazyBounce"
+        "specialEffect": "sakura"
     },
     {
-        "id": "deliciousrice",
+        "id": "deliciousriceball",
         "name": "なっちゃん",
         "relationship": "高校野球部",
         "message": "わざわざありがとう～子育て頑張れ！",
@@ -216,7 +216,7 @@ GUESTS_DATA = [
         "name": "こやま",
         "relationship": "幼馴染",
         "message": "受付スピーチ準備いろいろありがとう！今日だけじゃなく野球とかいつもありがとう！これからもよろしく！",
-        "specialEffect": "rainbow"
+        "specialEffect": "baseballSlide"
     },
     {
         "id": "ueuepandabaseball",
@@ -224,6 +224,20 @@ GUESTS_DATA = [
         "relationship": "幼馴染",
         "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？だいぶきつかったわー笑",
         "specialEffect": "sakura"
+    }, 
+    {
+        "id": "looklikewada",
+        "name": "かっちゃん",
+        "relationship": "幼馴染",
+        "message": "またお子を見させてー！また草野球とか一緒にできたらええなー⚾",
+        "specialEffect": "baseball"
+    },  
+    {
+        "id": "funenouenoyokoyama",
+        "name": "よこやま",
+        "relationship": "幼馴染",
+        "message": "自分の夢にむかってすすむのええなあーいつか運転する船に乗せてくれー！",
+        "specialEffect": "bubbles"
     },
     
     

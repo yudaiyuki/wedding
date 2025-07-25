@@ -65,10 +65,10 @@ const GUESTS = [
                 "specialEffect": "stars"
         },
         {
-                "id": "GU-casino",
-                "name": "ぐーさん",
+                "id": "Gwonmocasino",
+                "name": "구さん",
                 "relationship": "同期",
-                "message": "子育て2倍頑張ってください！",
+                "message": "육아 최선을 다하십시오!",
                 "specialEffect": "bubbles"
         },
         {
@@ -184,7 +184,7 @@ const GUESTS = [
                 "specialEffect": "sakura"
         },
         {
-                "id": "deliciousrice",
+                "id": "deliciousriceball",
                 "name": "なっちゃん",
                 "relationship": "高校野球部",
                 "message": "わざわざありがとう～子育て頑張れ！",
@@ -217,6 +217,20 @@ const GUESTS = [
                 "relationship": "幼馴染",
                 "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？だいぶきつかったわー笑",
                 "specialEffect": "sakura"
+        },
+        {
+                "id": "looklikewada",
+                "name": "かっちゃん",
+                "relationship": "幼馴染",
+                "message": "またお子を見させてー！また草野球とか一緒にできたらええなー⚾",
+                "specialEffect": "baseball"
+        },
+        {
+                "id": "funenouenoyokoyama",
+                "name": "よこやま",
+                "relationship": "幼馴染",
+                "message": "自分の夢にむかってすすむのええなあーいつか運転する船に乗せてくれー！",
+                "specialEffect": "bubbles"
         }
 ];
 
