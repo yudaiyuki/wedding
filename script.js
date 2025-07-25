@@ -93,7 +93,7 @@ const GUESTS = [
                 "specialEffect": "money"
         },
         {
-                "id": "baseball",
+                "id": "okawarikun",
                 "name": "たにだ",
                 "relationship": "同期",
                 "message": "藤浪観にいこ！",
