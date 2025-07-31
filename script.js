@@ -82,7 +82,7 @@ const GUESTS = [
                 "id": "coolmoe",
                 "name": "はすいけ",
                 "relationship": "同期",
-                "message": "準備は真面目にしたほうがいいで！（新郎目線）",
+                "message": "準備は真面目に手伝ったほうがいいで！（新郎目線）",
                 "specialEffect": "snowflakes"
         },
         {
@@ -132,14 +132,14 @@ const GUESTS = [
                 "name": "かわばた",
                 "relationship": "大学野球部",
                 "message": "子育て頑張って",
-                "specialEffect": "roses"
+                "specialEffect": "butterflies"
         },
         {
                 "id": "nagayamaonthethree",
                 "name": "ながやま",
                 "relationship": "大学野球部",
                 "message": "大阪までありがとう～次は2ヶ月後やな！",
-                "specialEffect": "butterflies"
+                "specialEffect": "sparkle"
         },
         {
                 "id": "sistercallyoumiyabe",
