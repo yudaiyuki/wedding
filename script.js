@@ -23,6 +23,34 @@ const GUESTS = [
                 "specialEffect": "bubbles"
         },
         {
+                "id": "Hirakisan",
+                "name": "平城さん",
+                "relationship": "上司",
+                "message": "村上さんをCopilot部隊に招待しましょう！",
+                "specialEffect": "stars"
+        },
+        {
+                "id": "Kososan",
+                "name": "髙曽さん",
+                "relationship": "上司",
+                "message": "もっともっと戦力になれるように頑張ります！",
+                "specialEffect": "stars"
+        },
+        {
+                "id": "Fujiisan",
+                "name": "藤井さん",
+                "relationship": "上司",
+                "message": "もっと暴れて殻を破っていきます！",
+                "specialEffect": "stars"
+        },
+        {
+                "id": "Yahatasan",
+                "name": "八幡さん",
+                "relationship": "上司",
+                "message": "いつかキャッチボールしましょう！",
+                "specialEffect": "baseball"
+        },
+        {
                 "id": "tachijiro",
                 "name": "たち",
                 "relationship": "同期",
@@ -48,7 +76,7 @@ const GUESTS = [
                 "id": "kijicommunity",
                 "name": "きじま",
                 "relationship": "同期",
-                "message": "来てくれてありがとうーまた飲みに行こ！",
+                "message": "クソ暑いのに来てくれてありがとうーまた飲みに行こ！",
                 "specialEffect": "butterflies"
         },
         {
@@ -107,6 +135,13 @@ const GUESTS = [
                 "relationship": "同期",
                 "message": "カジノしようぜ！",
                 "specialEffect": "trump"
+        },
+        {
+                "id": "doctorof-H",
+                "name": "かたやま",
+                "relationship": "同期",
+                "message": "誘えんくてほんまごめんな！また女の話楽しみにしとくわ笑",
+                "specialEffect": "joker"
         },
         {
                 "id": "bigvoice",
