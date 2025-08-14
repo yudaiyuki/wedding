@@ -12,7 +12,7 @@ const GUESTS = [
                 "id": "yudaiyudaiyudai",
                 "name": "ゆき",
                 "relationship": "ゆき",
-                "message": "ふひ",
+                "message": "来週焼肉ふひ❣️",
                 "specialEffect": "bubbles"
         },
         {
@@ -32,30 +32,30 @@ const GUESTS = [
         },
         {
                 "id": "isechangod",
-                "name": "伊勢さん",
+                "name": "伊勢様",
                 "relationship": "同期",
-                "message": "万能なとこすげえよなー彼女おらんとこだけやん！",
+                "message": "万能なとこすげえよなー彼女おらんとこだけやん！（おったらごめん）",
                 "specialEffect": "golf"
         },
         {
                 "id": "mineminestraight",
                 "name": "たかみね",
                 "relationship": "同期",
-                "message": "たかみね、自分に真っ直ぐなとこ👍👍👍👍👍これからもよろしく！",
+                "message": "みね、自分に真っ直ぐなとこ👍👍👍👍👍これからもよろしく！",
                 "specialEffect": "beer"
         },
         {
                 "id": "kijicommunity",
                 "name": "きじま",
                 "relationship": "同期",
-                "message": "コミュ力うらやましいわあー",
+                "message": "来てくれてありがとうーまた飲みに行こ！",
                 "specialEffect": "butterflies"
         },
         {
                 "id": "ifican",
                 "name": "にしえ",
                 "relationship": "同期",
-                "message": "また飲みに行けたら行こ！(笑)",
+                "message": "また飲みに行けたら行こ！(笑)いろいろ近況おしえてー",
                 "specialEffect": "confetti"
         },
         {
@@ -77,7 +77,7 @@ const GUESTS = [
                 "id": "whenmarry",
                 "name": "きのした",
                 "relationship": "同期",
-                "message": "はよ結婚せー",
+                "message": "結婚おめでとう",
                 "specialEffect": "sparkle"
         },
         {
@@ -119,7 +119,7 @@ const GUESTS = [
                 "id": "ojisan",
                 "name": "酒井",
                 "relationship": "大学野球部",
-                "message": "いいパパになりそうやな",
+                "message": "式準備だるすぎ！いいパパになりそうやな",
                 "specialEffect": "baseballScatter"
         },
         {
