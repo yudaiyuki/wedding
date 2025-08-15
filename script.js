@@ -161,7 +161,7 @@ const GUESTS = [
                 "id": "ojisan",
                 "name": "酒井",
                 "relationship": "大学野球部",
-                "message": "式準備だるすぎ！いいパパになりそうやな",
+                "message": "式準備ってやってもやらんくてもキレられるやん！さかいええパパになりそうやな",
                 "specialEffect": "baseballScatter"
         },
         {
@@ -189,7 +189,7 @@ const GUESTS = [
                 "id": "sistercallyoumiyabe",
                 "name": "みやべ",
                 "relationship": "大学野球部",
-                "message": "金の稼ぎたい",
+                "message": "金稼ぎたい",
                 "specialEffect": "money"
         },
         {
