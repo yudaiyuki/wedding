@@ -144,6 +144,13 @@ const GUESTS = [
                 "specialEffect": "joker"
         },
         {
+                "id": "ne-san",
+                "name": "まなべ",
+                "relationship": "同期",
+                "message": "行きたいゆうてくれてたのに埋め合わせになってもうてすまん！これからも変わらず飲み行ってくれよな！",
+                "specialEffect": "roses"
+        },
+        {
                 "id": "bigvoice",
                 "name": "ナガオ",
                 "relationship": "大学野球部",
