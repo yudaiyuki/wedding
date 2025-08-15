@@ -146,7 +146,7 @@ const GUESTS = [
         {
                 "id": "ne-san",
                 "name": "まなべ",
-                "relationship": "同期",
+                "relationship": "会社後輩",
                 "message": "行きたいゆうてくれてたのに埋め合わせになってもうてすまん！これからも変わらず飲み行ってくれよな！",
                 "specialEffect": "roses"
         },
@@ -175,7 +175,7 @@ const GUESTS = [
                 "id": "batty-speed",
                 "name": "かわばた",
                 "relationship": "大学野球部",
-                "message": "子育て頑張って",
+                "message": "わざわざ大阪まであざすー子育て頑張って",
                 "specialEffect": "roses"
         },
         {
@@ -189,7 +189,7 @@ const GUESTS = [
                 "id": "sistercallyoumiyabe",
                 "name": "みやべ",
                 "relationship": "大学野球部",
-                "message": "金ほしいなー",
+                "message": "金の稼ぎたい",
                 "specialEffect": "money"
         },
         {
@@ -203,7 +203,7 @@ const GUESTS = [
                 "id": "simikenhossi",
                 "name": "ホッシ",
                 "relationship": "大学野球部",
-                "message": "金貸してや",
+                "message": "さいきん金貸してやあきいてないなー風呂入れよ！",
                 "specialEffect": "money"
         },
         {
