@@ -112,7 +112,7 @@ const GUESTS = [
                 "id": "coolmoe",
                 "name": "はすいけ",
                 "relationship": "同期",
-                "message": "準備は真面目にしたほうがいいで！（新郎目線）",
+                "message": "2ヶ月後楽しみにしてる！準備は真面目にしたほうがいいで！（新郎目線）",
                 "specialEffect": "snowflakes"
         },
         {
