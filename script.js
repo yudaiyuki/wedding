@@ -265,7 +265,7 @@ const GUESTS = [
                 "id": "ueuepandabaseball",
                 "name": "なかうえ",
                 "relationship": "幼馴染",
-                "message": "遅ればせながら式をあげました！23歳？でこの準備をやってたん？だいぶきつかったわー笑",
+                "message": "遅ればせながら式をあげました！24歳？でこの準備をやってたん？だいぶきつかったわー笑",
                 "specialEffect": "sakura"
         },
         {
