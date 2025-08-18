@@ -54,9 +54,8 @@ const GUESTS = [
                 "id": "tachijiro",
                 "name": "たち",
                 "relationship": "同期",
-                "message": "たち！これあげるわ！",
-                "specialEffect": "ramen",
-                "image": "pic/tachi.png"
+                "message": "たち！IDを招待LINEで打ってみて！",
+                "specialEffect": "ramen"
         },
         {
                 "id": "isechangod",
@@ -147,7 +146,14 @@ const GUESTS = [
                 "id": "ne-san",
                 "name": "まなべ",
                 "relationship": "会社後輩",
-                "message": "行きたいゆうてくれてたのに欠員の埋め合わせになってもうてすまん！これからも変わらず飲み行ってくれよな！",
+                "message": "行きたいゆうてくれてたのにすまん！これからも変わらず飲み行ってくれよな！",
+                "specialEffect": "roses"
+        },
+        {
+                "id": "murakamisan",
+                "name": "村上さん",
+                "relationship": "会社同僚",
+                "message": "Copilot部隊に入りませんか？（宗教勧誘ではありません）",
                 "specialEffect": "roses"
         },
         {
@@ -446,6 +452,9 @@ function applySpecialEffect(effectType) {
             break;
         case 'baseballSlide':
             createBaseballSlideEffect(effectContainer);
+            break;        
+        case 'moneySlide':
+            createmoneySlideEffect(effectContainer);
             break;
         case 'trump':
             createTrumpEffect(effectContainer);
@@ -654,6 +663,10 @@ style.textContent = `
     @keyframes baseballSlide {
         0% { transform: translateX(0) rotate(0deg); opacity: 1; }
         100% { transform: translateX(120vw) rotate(720deg); opacity: 0; }
+    }    
+    @keyframes moneySlide {
+        0% { transform: translateX(0) rotate(0deg); opacity: 1; }
+        100% { transform: translateX(120vw) rotate(720deg); opacity: 0; }
     }
     @keyframes beerDrop {
         0% {
@@ -744,6 +757,23 @@ function createBaseballSlideEffect(container) {
             top: ${Math.random() * 80}vh;
             left: -50px;
             animation: baseballSlide ${Math.random() * 3 + 3}s linear infinite;
+            animation-delay: ${Math.random() * 3}s;
+        `;
+        container.appendChild(ball);
+    }
+}
+
+// moneyエフェクト
+function createmoneySlideEffect(container) {
+    for (let i = 0; i < 30; i++) {
+        const ball = document.createElement('div');
+        ball.innerHTML = '🤑';
+        ball.style.cssText = `
+            position: absolute;
+            font-size: ${Math.random() * 20 + 20}px;
+            top: ${Math.random() * 80}vh;
+            left: -50px;
+            animation: moneySlide ${Math.random() * 3 + 3}s linear infinite;
             animation-delay: ${Math.random() * 3}s;
         `;
         container.appendChild(ball);
