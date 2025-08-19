@@ -118,7 +118,7 @@ const GUESTS = [
                 "id": "sawachan",
                 "name": "かわずみ",
                 "relationship": "同期",
-                "message": "ずみ、そろそろ億れるんちゃうん？",
+                "message": "ずみ、そろそろ億れるんちゃうん？IDを招待LINEで打ってみてー",
                 "specialEffect": "money"
         },
         {
@@ -154,7 +154,7 @@ const GUESTS = [
                 "name": "村上さん",
                 "relationship": "会社同僚",
                 "message": "Copilot部隊に入りませんか？（宗教勧誘ではありません）",
-                "specialEffect": "roses"
+                "specialEffect": "moneySlide"
         },
         {
                 "id": "bigvoice",
