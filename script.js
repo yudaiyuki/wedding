@@ -27,7 +27,7 @@ const GUESTS = [
                 "name": "平城さん",
                 "relationship": "上司",
                 "message": "村上さんをCopilot部隊に招待しましょう！",
-                "specialEffect": "stars"
+                "specialEffect": "beer"
         },
         {
                 "id": "Kososan",
@@ -48,7 +48,7 @@ const GUESTS = [
                 "name": "八幡さん",
                 "relationship": "上司",
                 "message": "いつかキャッチボールしましょう！",
-                "specialEffect": "baseball"
+                "specialEffect": "baseballSlide"
         },
         {
                 "id": "tachijiro",
@@ -150,7 +150,7 @@ const GUESTS = [
                 "specialEffect": "roses"
         },
         {
-                "id": "murakamisan",
+                "id": "Murakamisan",
                 "name": "村上さん",
                 "relationship": "会社同僚",
                 "message": "Copilot部隊に入りませんか？（宗教勧誘ではありません）",
@@ -763,11 +763,11 @@ function createBaseballSlideEffect(container) {
     }
 }
 
-// moneyエフェクト
+// ドッグエフェクト
 function createmoneySlideEffect(container) {
     for (let i = 0; i < 30; i++) {
         const ball = document.createElement('div');
-        ball.innerHTML = '🤑';
+        ball.innerHTML = '🐶';
         ball.style.cssText = `
             position: absolute;
             font-size: ${Math.random() * 20 + 20}px;
