@@ -54,7 +54,7 @@ const GUESTS = [
                 "id": "tachijiro",
                 "name": "たち",
                 "relationship": "同期",
-                "message": "たち！IDを招待LINEで打ってみて！",
+                "message": "裸見れへんで残念やー。IDを招待LINEで打ってみて！",
                 "specialEffect": "ramen"
         },
         {
