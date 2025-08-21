@@ -195,7 +195,7 @@ const GUESTS = [
                 "id": "sistercallyoumiyabe",
                 "name": "みやべ",
                 "relationship": "大学野球部",
-                "message": "金稼ぎたい",
+                "message": "男は金とベンチプレス？",
                 "specialEffect": "money"
         },
         {
