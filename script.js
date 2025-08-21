@@ -97,7 +97,7 @@ const GUESTS = [
                 "name": "구さん",
                 "relationship": "同期",
                 "message": "육아 최선을 다하십시오!",
-                "specialEffect": "bubbles",
+                "specialEffect": "aptDance",
                 "image": "pic/gu.png"
         },
         {
@@ -477,6 +477,9 @@ function applySpecialEffect(effectType) {
         case 'joker':
             createJokerEffect(effectContainer);
             break;
+        case 'aptDance':
+            createAptDanceEffect(effectContainer);
+        break;
     }
     
     // 10秒後にエフェクトを削除
@@ -703,6 +706,120 @@ style.textContent = `
         100% {
             transform: translateY(100vh) rotate(360deg);
             opacity: 0.8;
+        }
+    }
+    @keyframes aptDance {
+        0% {
+            transform: scale(1) rotate(0deg);
+            opacity: 0.8;
+            text-shadow:
+                0 0 5px #ff1493,
+                0 0 10px #ff1493,
+                0 0 15px #ff1493,
+                0 0 20px #ff1493;
+        }
+        25% {
+            transform: scale(1.4) rotate(90deg);
+            opacity: 1;
+            text-shadow:
+                0 0 10px #ff1493,
+                0 0 20px #ff1493,
+                0 0 30px #ff1493,
+                0 0 40px #ff69b4,
+                0 0 50px #ff69b4;
+        }
+        50% {
+            transform: scale(1.1) rotate(180deg);
+            opacity: 0.9;
+            text-shadow:
+                0 0 15px #ff1493,
+                0 0 25px #ff1493,
+                0 0 35px #ff69b4,
+                0 0 45px #ff69b4;
+        }
+        75% {
+            transform: scale(1.3) rotate(270deg);
+            opacity: 1;
+            text-shadow:
+                0 0 20px #ff1493,
+                0 0 30px #ff1493,
+                0 0 40px #ff1493,
+                0 0 50px #ff69b4,
+                0 0 60px #ff69b4;
+        }
+        100% {
+            transform: scale(1) rotate(360deg);
+            opacity: 0.8;
+            text-shadow:
+                0 0 5px #ff1493,
+                0 0 10px #ff1493,
+                0 0 15px #ff1493,
+                0 0 20px #ff1493;
+        }
+    }
+    @keyframes aptNeonGlow {
+        0% {
+            transform: scale(1);
+            opacity: 0.7;
+            filter: brightness(1);
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0.7;
+            filter: brightness(1);
+        }
+    }
+    @keyframes aptBounce {
+        0%, 100% {
+            transform: translateY(0) scale(1);
+        }
+        25% {
+            transform: translateY(-30px) scale(1.1);
+        }
+        50% {
+            transform: translateY(-50px) scale(1.2);
+        }
+        75% {
+            transform: translateY(-20px) scale(1.1);
+        }
+    }
+    @keyframes aptSpin {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+        25% {
+            transform: rotate(90deg) scale(1.3);
+        }
+        50% {
+            transform: rotate(180deg) scale(0.8);
+        }
+        75% {
+            transform: rotate(270deg) scale(1.4);
+        }
+        100% {
+            transform: rotate(360deg) scale(1);
+        }
+    }
+    @keyframes aptWave {
+        0% {
+            transform: translateX(0) translateY(0) rotate(0deg);
+        }
+        25% {
+            transform: translateX(20px) translateY(-10px) rotate(10deg);
+        }
+        50% {
+            transform: translateX(-15px) translateY(-20px) rotate(-5deg);
+        }
+        75% {
+            transform: translateX(10px) translateY(-15px) rotate(15deg);
+        }
+        100% {
+            transform: translateX(0) translateY(0) rotate(0deg);
         }
     }
 
@@ -973,3 +1090,166 @@ function createRamenEffect(container) {
         container.appendChild(ramen);
     }
 }
+
+
+// APTダンスエフェクト - A、P、T、.のかたまりがランダムに踊り回る
+function createAptDanceEffect(container) {
+    const aptWord = 'APT.';
+   
+    // 複数のAPT.のかたまりを作成
+    for (let group = 0; group < 8; group++) { // 8つのAPT.グループ
+        const groupStartX = Math.random() * 80; // ランダムな横位置（0-80vw）
+        const groupStartY = Math.random() * 60 + 10; // ランダムな縦位置（10-70vh）
+       
+        // グループ全体の動きの状態
+        let groupPosX = groupStartX;
+        let groupPosY = groupStartY;
+        let groupDirX = (Math.random() - 0.5) * 2;
+        let groupDirY = (Math.random() - 0.5) * 2;
+       
+        // 対角線パターンの状態（グループ共通）
+        let diagonalStep = 0;
+        let diagonalPattern = [
+            // 右上への段階的移動（さらに上よりに）
+            {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8},
+            // もどる（左下への段階的移動）
+            {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8},
+            // 左上への段階的移動（さらに上よりに）
+            {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8},
+            // もどる（右下への段階的移動）
+            {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8},
+            // 右上への段階的移動（さらに上よりに）
+            {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8},
+            // もどる（左下への段階的移動）
+            {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8},
+            // 右上への段階的移動（さらに上よりに）
+            {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8},
+            // もどる（左下への段階的移動）
+            {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8},
+            // 左上への段階的移動（さらに上よりに）
+            {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8},
+            // もどる（右下への段階的移動）
+            {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8},
+            // 右上への段階的移動（さらに上よりに）
+            {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8}, {dx: 0.2, dy: -0.8},
+            // もどる（左下への段階的移動）
+            {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8}, {dx: -0.2, dy: 0.8},
+            // 左上への段階的移動（さらに上よりに）
+            {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8},
+            // もどる（右下への段階的移動）
+            {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8},
+            // 左上への段階的移動（さらに上よりに）
+            {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8}, {dx: -0.2, dy: -0.8},
+            // もどる（右下への段階的移動）
+            {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}, {dx: 0.2, dy: 0.8}
+        ];
+       
+        const groupElements = []; // このグループの全文字を保存
+       
+        // 各グループ内でA、P、T、.を順番に配置
+        for (let i = 0; i < aptWord.length; i++) {
+            const apt = document.createElement('div');
+            apt.innerHTML = aptWord[i];
+           
+            // かたまり内での相対位置（固定）
+            const relativeX = i * 5; // 文字間隔5vw
+            const relativeY = Math.random() * 3; // 少し縦にばらつき（固定値）
+           
+            apt.style.cssText = `
+                position: absolute;
+                font-size: ${Math.random() * 40 + 30}px;
+                font-weight: 900;
+                font-family: 'Impact', 'Franklin Gothic Heavy', 'Arial Black', sans-serif;
+                left: ${groupPosX + relativeX}vw;
+                top: ${groupPosY + relativeY}vh;
+                color: #ff1493;
+                -webkit-text-stroke: 1px #000;
+                text-stroke: 1px #000;
+                text-shadow:
+                    0 0 5px #ff1493,
+                    0 0 10px #ff1493,
+                    0 0 15px #ff1493,
+                    0 0 20px #ff1493,
+                    0 0 25px #ff69b4,
+                    0 0 30px #ff69b4,
+                    1px 1px 0px #000,
+                    -1px -1px 0px #000,
+                    1px -1px 0px #000,
+                    -1px 1px 0px #000;
+                filter: brightness(1.2) contrast(1.3);
+                transform-origin: center;
+                z-index: 1000;
+                letter-spacing: 2px;
+                text-rendering: optimizeSpeed;
+                -webkit-font-smoothing: none;
+                -moz-osx-font-smoothing: unset;
+                image-rendering: pixelated;
+            `;
+           
+            container.appendChild(apt);
+           
+            // グループの要素として保存（相対位置も保存）
+            groupElements.push({
+                element: apt,
+                relativeX: relativeX,
+                relativeY: relativeY
+            });
+        }
+       
+        // グループ全体のランダムな動きを作成する関数
+        function groupRandomDance() {
+            // 時間ベースの滑らかな基本移動（もっとゆっくり）
+            const time = Date.now() * 0.0002; // 0.0005 → 0.0002に変更（2.5倍ゆっくり）
+            const smoothX = Math.sin(time + group) * 0.2; // 0.3 → 0.2に減少（振幅も小さく）
+            const smoothY = Math.cos(time * 1.3 + group) * 0.15; // 0.2 → 0.15に減少（振幅も小さく）
+           
+            groupPosX += groupDirX * 0.1 + smoothX; // 0.15 → 0.1に減少（基本移動も遅く）
+            groupPosY += groupDirY * 0.08 + smoothY; // 0.12 → 0.08に減少（基本移動も遅く）
+           
+            // 対角線パターンを追加（はっきりわかる大きさ）
+            const currentPattern = diagonalPattern[diagonalStep % diagonalPattern.length];
+            groupPosX += currentPattern.dx;
+            groupPosY += currentPattern.dy;
+            diagonalStep++;
+           
+            // 画面端で反転（滑らかに）
+            if (groupPosX <= 0 || groupPosX >= 75) groupDirX = -groupDirX; // 75vw（APT.の幅考慮）
+            if (groupPosY <= 0 || groupPosY >= 90) groupDirY = -groupDirY;
+           
+            // 滑らかな方向転換（時間ベース、もっとゆっくり）
+            if (Math.sin(time * 0.05 + group) > 0.99) { // 0.1 → 0.05に変更（約20秒に1回）
+                const targetDirX = (Math.random() - 0.5) * 0.6; // 0.8 → 0.6に減少
+                const targetDirY = (Math.random() - 0.5) * 0.6; // 0.8 → 0.6に減少
+                groupDirX += (targetDirX - groupDirX) * 0.05; // 0.1 → 0.05に減少（よりゆっくり転換）
+                groupDirY += (targetDirY - groupDirY) * 0.05; // 0.1 → 0.05に減少（よりゆっくり転換）
+            }
+           
+            // 回転とスケール（グループ全体で滑らかに、もっとゆっくり）
+            const time2 = Date.now() * 0.0005; // 0.001 → 0.0005に変更（2倍ゆっくり）
+            const rotation = Math.sin(time2 + group * 0.5) * 6; // 8 → 6度に減少（回転も小さく）
+            const scale = 1.0 + Math.sin(time2 * 1.2 + group) * 0.1; // 1.5 → 1.2、0.15 → 0.1に減少
+            const brightness = 1.1 + Math.sin(time2 * 1.5 + group * 0.3) * 0.15; // 2 → 1.5、0.2 → 0.15に減少
+           
+            // グループ内の全文字の位置を更新
+            groupElements.forEach(item => {
+                item.element.style.left = (groupPosX + item.relativeX) + 'vw';
+                item.element.style.top = (groupPosY + item.relativeY) + 'vh';
+                item.element.style.transform = `rotate(${rotation}deg) scale(${scale})`;
+                item.element.style.filter = `brightness(${brightness}) contrast(1.3)`;
+            });
+           
+            // 次のフレームで再実行（段階的動きを早く）
+            setTimeout(groupRandomDance, 40); // 40ms間隔で早い段階的更新
+        }
+       
+        // 各グループに異なる開始タイミングを設定
+        setTimeout(() => {
+            groupRandomDance();
+        }, Math.random() * 3000); // 0-3秒の間でランダム開始
+    }
+}
+
+
+
+
+
